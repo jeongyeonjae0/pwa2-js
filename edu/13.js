@@ -58,3 +58,23 @@ const p = document.querySelector('p');
 p.classList.add('test2');
 p.classList.remove('test');
 p.classList.toggle('test3');
+
+// -----------------
+// 새로운 요소 생성 
+// -----------------
+// 요소 생성 
+const newH1 = document.createElement('h1');
+newH1.textContent = '새로운 요소다.';
+
+// 요소 삽입(부모 노드의 가장 마지막 자식 노드로 추가 )
+document.body.appendChild(newH1);
+
+// 요소 삽입(부모 노드의 자식 노드 중 특정 타겟 앞에 노드를 추가)
+const newH11 = document.createElement('h1');
+newH11.textContent = '새로운 요소다.';
+const childP = document.querySelector('p');
+document.body.insertBefore(newH11, childP);
+
+// 요소 제거
+const form = document.querySelector('form');
+document.body.removeChild(form);
