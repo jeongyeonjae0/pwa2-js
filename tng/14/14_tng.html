@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./14_tng.css">
+  <script src="./14_tng.js" defer></script>
+  <title>14_tng</title>
+</head>
+<body>
+  <!-- <div class="container"> 
+    <form action="">
+      <input type="text" name="board" id="board">
+      <button type='button' id="btn">작성</button>
+    </form>
+  </div> -->
+
+  <!-- T -->
+  <!-- 여러 개(ex_3개) 작성되어 있다고 가정하기, 모양 먼저 만들고 작업 -->
+  <!-- 어떤 게 효율이 좋을까? {ul > li(내비게이션 버튼, flex로 옆으로 가야 될 때만) , div(컨테이너 역할) , p(짧은 문장, 글 담당)}중 -->
+  <!-- 영역 만들 때는 div -->
+  <!-- div.container 안에 div.write-box , 같은 위치로 div.print=box 안에 div.content 안에 p태그로 감싸기--> 
+  <!-- 서버로 요청하고 서버에서 받아서 쓸 때는 form 태그로 쓰기-->
+  <!-- header / main / footer -->
+   <!-- div : 블록레벨 요소 -> flex : 인라인 레벨요소 처럼 동작 -->
+  <div class="tt">Z</div>
+  <div class="test"> 
+    <!-- 화면에 나오는 영역 -->
+  <div class="container">
+    <div class="write-box align-center-flex">
+      <input type="text" name="keyword" id="keyword">
+      <button type="button" id="writeBtn">작성</button>
+    </div>
+    <div class="print-box align-center-flex">
+      <!-- <div class="content">
+        <p>테스트용 글1</p>
+      </div> -->
+    </div>
+   </div>
+  </div> 
+</body>
+</html>
